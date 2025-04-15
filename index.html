@@ -1,10 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link rel="stylesheet" href="style.css" />
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Formulario</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
   </head>
 
-  
+  <body>
+    <div class="form-container">
+      <form class="my-form">
+        <!-- primera fila -->
+        <div class="form-row">
+          <div class="input-group">
+            <span class="material-icons">person</span>
+            <input
+              type="text"
+              id="first-name"
+              placeholder="First Name"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <input
+              type="text"
+              id="last-name"
+              placeholder="Last Name"
+              required
+            />
+          </div>
+        </div>
+
+        <!-- segunda fila -->
+        <div class="form-row">
+          <div class="input-group">
+            <span class="material-icons">domain</span>
+            <input type="text" id="company" placeholder="Company" required />
+          </div>
+          <div class="input-group">
+            <span class="material-icons">mail</span>
+            <input type="email" id="email" placeholder="Email" required />
+          </div>
+        </div>
+
+        <!-- tercera fila -->
+        <div class="form-row">
+          <div class="input-group">
+            <input type="text" id="job-title" placeholder="Job Title" />
+          </div>
+          <div class="input-group phone-group">
+            <span class="material-icons">call</span>
+            <select class="country-code">
+              <option value="+52" selected>🇲🇽 +52</option>
+              <option value="+1">🇺🇸 +1</option>
+              <option value="+44">🇬🇧 +44</option>
+            </select>
+            <input type="tel" id="phone" placeholder="Phone Number" />
+          </div>
+        </div>
+
+        <div class="add-buttons">
+          <button type="button" class="btn-secondary">Add Phone</button>
+          <button type="button" class="btn-secondary">Add Address</button>
+        
+        </div>
+
+        <div class="form-row">
+        <div class="input-group">
+          <span class="material-icons">cake</span>
+          <input type="text" id="day" placeholder="Day">
+       
+
+
+        </div>
+          <div class="input-group">
+            <select id="month" required>
+              <option value="" disabled selected hidden>Month</option>
+              <option>January</option>
+              <option>February</option>
+              <option>March</option>
+              <option>April</option>
+              <option>May</option>
+              <option>June</option>
+              <option>July</option>
+              <option>August</option>
+              <option>September</option>
+              <option>October</option>
+              <option>November</option>
+              <option>December</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <input type="text" id="year" placeholder="Year" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="input-group">
+            <span class="material-icons">description</span>
+            <input type="text" placeholder="Notes" />
+          </div>
+        </div>
+
+   
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

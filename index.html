@@ -14,7 +14,27 @@
   <body>
     <div class="form-container">
       <form class="my-form">
-        
+        <!-- header -->
+        <div class="form-header">
+          <span class="material-icons">star</span>
+          <button type="button" class="btn-save">Save</button>
+        </div>
+
+        <!-- user pic -->
+        <div class="contact-photo-container">
+          <img
+            class="contact-photo"
+            src="https://www.gstatic.com/identity/boq/profilepicturepicker/photo_silhouette_e02a5f5deb3ffc173119a01bc9575490.png"
+            alt="Contact Photo"
+            data-iml="8656"
+          />
+          <div class="photo-add">
+            <button class="btn-photo">
+              <span class="material-icons">add</span>
+            </button>
+          </div>
+        </div>
+
         <!-- primera fila -->
         <div class="form-row">
           <div class="input-group">
@@ -26,13 +46,15 @@
               required
             />
           </div>
-          <div class="input-group">
-            <input
-              type="text"
-              id="last-name"
-              placeholder="Last Name"
-              required
-            />
+          <div class="form-row">
+            <div class="input-group">
+              <input
+                type="text"
+                id="last-name"
+                placeholder="Last Name"
+                required
+              />
+            </div>
           </div>
         </div>
 
@@ -47,6 +69,9 @@
             <input type="email" id="email" placeholder="Email" required />
           </div>
         </div>
+        <div class="add-buttons">
+          <button type="button" class="btn-secondary">Add Email</button>
+        </div>
 
         <!-- tercera fila -->
         <div class="form-row">
@@ -56,9 +81,9 @@
           <div class="input-group phone-group">
             <span class="material-icons">call</span>
             <select class="country-code">
-              <option value="+52" selected>🇲🇽 +52</option>
-              <option value="+1">🇺🇸 +1</option>
-              <option value="+44">🇬🇧 +44</option>
+              <option value="MX" selected>🇲🇽 +52</option>
+              <option value="US">🇺🇸 +1</option>
+              <option value="GB">🇬🇧 +44</option>
             </select>
             <input type="tel" id="phone" placeholder="Phone Number" />
           </div>
@@ -67,18 +92,11 @@
         <div class="add-buttons">
           <button type="button" class="btn-secondary">Add Phone</button>
           <button type="button" class="btn-secondary">Add Address</button>
-        
         </div>
 
         <div class="form-row">
-        <div class="input-group">
-          <span class="material-icons">cake</span>
-          <input type="text" id="day" placeholder="Day">
-       
-
-
-        </div>
           <div class="input-group">
+            <span class="material-icons">cake</span>
             <select id="month" required>
               <option value="" disabled selected hidden>Month</option>
               <option>January</option>
@@ -96,6 +114,9 @@
             </select>
           </div>
           <div class="input-group">
+            <input type="text" id="day" placeholder="Day" />
+          </div>
+          <div class="input-group">
             <input type="text" id="year" placeholder="Year" />
           </div>
         </div>
@@ -105,9 +126,6 @@
             <span class="material-icons">description</span>
             <input type="text" placeholder="Notes" />
           </div>
-        </div>
-
-   
         </div>
       </form>
     </div>

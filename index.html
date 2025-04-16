@@ -22,38 +22,38 @@
 
         <!-- user pic -->
         <div class="contact-photo-container">
-          <img
-            class="contact-photo"
-            src="https://www.gstatic.com/identity/boq/profilepicturepicker/photo_silhouette_e02a5f5deb3ffc173119a01bc9575490.png"
-            alt="Contact Photo"
-            data-iml="8656"
-          />
-          <div class="photo-add">
-            <button class="btn-photo">
-              <span class="material-icons">add</span>
-            </button>
+          <div class="contact-photo">
+            <img
+              class="contact-photo"
+              src="https://www.gstatic.com/identity/boq/profilepicturepicker/photo_silhouette_e02a5f5deb3ffc173119a01bc9575490.png"
+              alt="Contact Photo"
+              data-iml="8656"
+            />
+            <div class="photo-add">
+              <button class="btn-photo">
+                <span class="material-icons">add</span>
+              </button>
+            </div>
           </div>
         </div>
 
-        <!-- primera fila -->
+        <!-- nombre -->
         <div class="form-row">
           <div class="input-group">
             <span class="material-icons">person</span>
-            <input
-              type="text"
-              id="first-name"
-              placeholder="First Name"
-              required
-            />
+            <div class="floating-label-container">
+              <input type="text" id="first-name" placeholder="" required />
+              <label for="first-name">First name</label>
+            </div>
           </div>
-          <div class="form-row">
-            <div class="input-group">
-              <input
-                type="text"
-                id="last-name"
-                placeholder="Last Name"
-                required
-              />
+        </div>
+
+        <!-- apellidos -->
+        <div class="form-row">
+          <div class="input-group">
+            <div class="floating-label-container">
+              <input type="text" id="last-name" placeholder="" required />
+              <label for="las-name">Last Name</label>
             </div>
           </div>
         </div>
@@ -65,19 +65,30 @@
             <input type="text" id="company" placeholder="Company" required />
           </div>
           <div class="input-group">
+            <div class="floating-label-container">
+              <input type="text" id="job-title" placeholder="" />
+              <label for="job-title">Job Title</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="input-group">
             <span class="material-icons">mail</span>
-            <input type="email" id="email" placeholder="Email" required />
+            <div class="floating-label-container">
+              <input type="email" id="email" placeholder="" required />
+              <label for="email">Email</label>
+            </div>
           </div>
         </div>
         <div class="add-buttons">
-          <button type="button" class="btn-secondary">Add Email</button>
+          <button type="button" class="btn-secondary">
+            <span class="material-icons">add</span>Add Email
+          </button>
         </div>
 
         <!-- tercera fila -->
         <div class="form-row">
-          <div class="input-group">
-            <input type="text" id="job-title" placeholder="Job Title" />
-          </div>
           <div class="input-group phone-group">
             <span class="material-icons">call</span>
             <select class="country-code">
@@ -85,13 +96,20 @@
               <option value="US">🇺🇸 +1</option>
               <option value="GB">🇬🇧 +44</option>
             </select>
-            <input type="tel" id="phone" placeholder="Phone Number" />
+            <div class="floating-label-container">
+              <input type="tel" id="phone" placeholder="" />
+              <label for="phone">Phone Number</label>
+            </div>
           </div>
         </div>
 
         <div class="add-buttons">
-          <button type="button" class="btn-secondary">Add Phone</button>
-          <button type="button" class="btn-secondary">Add Address</button>
+          <button type="button" class="btn-secondary">
+            <span class="material-icons">add</span>Add Phone
+          </button>
+          <button type="button" class="btn-secondary">
+            <span class="material-icons">location_on</span>Add Address
+          </button>
         </div>
 
         <div class="form-row">
@@ -114,17 +132,28 @@
             </select>
           </div>
           <div class="input-group">
-            <input type="text" id="day" placeholder="Day" />
+            <div class="floating-label-container">
+              <input type="text" id="day" placeholder="" />
+              <label for="day">Day</label>
+            </div>
           </div>
           <div class="input-group">
-            <input type="text" id="year" placeholder="Year" />
+            <div class="floating-label-container">
+              <input type="text" id="year" placeholder="" />
+              <label for="year">Year</label>
+            </div>
           </div>
         </div>
 
         <div class="form-row">
           <div class="input-group">
             <span class="material-icons">description</span>
-            <input type="text" placeholder="Notes" />
+            <div class="notes-container">
+              <div class="floating-label-container">
+                <textarea placeholder=""></textarea>
+                <label for="notes-container">Notes</label>
+              </div>
+            </div>
           </div>
         </div>
       </form>

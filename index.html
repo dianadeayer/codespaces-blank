@@ -51,6 +51,7 @@
         <!-- apellidos -->
         <div class="form-row">
           <div class="input-group">
+            <span class="material-icons empty-icon"></span>
             <div class="floating-label-container">
               <input type="text" id="last-name" placeholder="" required />
               <label for="las-name">Last Name</label>
@@ -62,9 +63,15 @@
         <div class="form-row">
           <div class="input-group">
             <span class="material-icons">domain</span>
-            <input type="text" id="company" placeholder="Company" required />
+            <div class="floating-label-container">
+              <input type="text" id="company" placeholder="" required />
+              <label for="company">Company</label>
+            </div>
           </div>
+        </div>
+        <div class="form-row">
           <div class="input-group">
+            <span class="material-icons empty-icon"></span>
             <div class="floating-label-container">
               <input type="text" id="job-title" placeholder="" />
               <label for="job-title">Job Title</label>
@@ -148,11 +155,9 @@
         <div class="form-row">
           <div class="input-group">
             <span class="material-icons">description</span>
-            <div class="notes-container">
-              <div class="floating-label-container">
-                <textarea placeholder=""></textarea>
-                <label for="notes-container">Notes</label>
-              </div>
+            <div class="floating-label-container">
+              <textarea id="notes" placeholder=""></textarea>
+              <label for="notes">Notes</label>
             </div>
           </div>
         </div>

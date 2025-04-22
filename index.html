@@ -12,156 +12,165 @@
   </head>
 
   <body>
-    <div class="form-container">
-      <form class="my-form">
-        <!-- header -->
-        <div class="form-header">
-          <span class="material-icons">star</span>
-          <button type="button" class="btn-save">Save</button>
-        </div>
+    <div class="container">
+      <div class="form-container">
+        <form class="my-form">
+          <!-- header -->
+          <div class="form-header">
+            <div class="back-button">
+              <span class="material-icons">arrow_back</span>
+            </div>
+            <div class="form-save">
+              <span class="material-icons">star</span>
+              <button type="button" class="btn-save">Save</button>
+            </div>
+          </div>
 
-        <!-- user pic -->
-        <div class="contact-photo-container">
-          <div class="contact-photo">
-            <img
-              class="contact-photo"
-              src="https://www.gstatic.com/identity/boq/profilepicturepicker/photo_silhouette_e02a5f5deb3ffc173119a01bc9575490.png"
-              alt="Contact Photo"
-              data-iml="8656"
-            />
-            <div class="photo-add">
-              <button class="btn-photo">
-                <span class="material-icons">add</span>
-              </button>
+          <!-- user pic -->
+          <div class="contact-photo-container">
+            <div class="contact-photo">
+              <img
+                class="contact-photo"
+                src="https://www.gstatic.com/identity/boq/profilepicturepicker/photo_silhouette_e02a5f5deb3ffc173119a01bc9575490.png"
+                alt="Contact Photo"
+                data-iml="8656"
+              />
+              <div class="photo-add">
+                <button class="btn-photo">
+                  <span class="material-icons">add</span>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- nombre -->
-        <div class="form-row">
-          <div class="input-group">
-            <span class="material-icons">person</span>
-            <div class="floating-label-container">
-              <input type="text" id="first-name" placeholder="" required />
-              <label for="first-name">First name</label>
+          <!-- nombre -->
+          <div class="form-row">
+            <div class="input-group">
+              <span class="material-icons">person</span>
+              <div class="floating-label-container">
+                <input type="text" id="first-name" placeholder="" required />
+                <label for="first-name">First name</label>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- apellidos -->
-        <div class="form-row">
-          <div class="input-group">
-            <span class="material-icons empty-icon"></span>
-            <div class="floating-label-container">
-              <input type="text" id="last-name" placeholder="" required />
-              <label for="las-name">Last Name</label>
+          <!-- apellidos -->
+          <div class="form-row">
+            <div class="input-group">
+              <span class="material-icons empty-icon"></span>
+              <div class="floating-label-container">
+                <input type="text" id="last-name" placeholder="" required />
+                <label for="las-name">Last Name</label>
+              </div>
             </div>
           </div>
-        </div>
 
-        <!-- segunda fila -->
-        <div class="form-row">
-          <div class="input-group">
-            <span class="material-icons">domain</span>
-            <div class="floating-label-container">
-              <input type="text" id="company" placeholder="" required />
-              <label for="company">Company</label>
+          <!-- segunda fila -->
+          <div class="form-row">
+            <div class="input-group">
+              <span class="material-icons">domain</span>
+              <div class="floating-label-container">
+                <input type="text" id="company" placeholder="" required />
+                <label for="company">Company</label>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="form-row">
-          <div class="input-group">
-            <span class="material-icons empty-icon"></span>
-            <div class="floating-label-container">
-              <input type="text" id="job-title" placeholder="" />
-              <label for="job-title">Job Title</label>
+          <div class="form-row">
+            <div class="input-group">
+              <span class="material-icons empty-icon"></span>
+              <div class="floating-label-container">
+                <input type="text" id="job-title" placeholder="" />
+                <label for="job-title">Job Title</label>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="form-row">
-          <div class="input-group">
-            <span class="material-icons">mail</span>
-            <div class="floating-label-container">
-              <input type="email" id="email" placeholder="" required />
-              <label for="email">Email</label>
+          <div class="form-row">
+            <div class="input-group">
+              <span class="material-icons">mail</span>
+              <div class="floating-label-container">
+                <input type="email" id="email" placeholder="" required />
+                <label for="email">Email</label>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="add-buttons">
-          <button type="button" class="btn-secondary">
-            <span class="material-icons">add</span>Add Email
-          </button>
-        </div>
+          <div class="add-buttons">
+            <button type="button" class="btn-secondary">
+              <span class="material-icons">add</span>Add Email
+            </button>
+          </div>
 
-        <!-- tercera fila -->
-        <div class="form-row">
-          <div class="input-group phone-group">
-            <span class="material-icons">call</span>
-            <select class="country-code">
-              <option value="MX" selected>🇲🇽 +52</option>
-              <option value="US">🇺🇸 +1</option>
-              <option value="GB">🇬🇧 +44</option>
-            </select>
-            <div class="floating-label-container">
-              <input type="tel" id="phone" placeholder="" />
-              <label for="phone">Phone Number</label>
+          <!-- tercera fila -->
+          <div class="form-row">
+            <div class="input-group phone-group">
+              <span class="material-icons">call</span>
+              <select class="country-code">
+                <option value="MX" selected>🇲🇽 +52</option>
+                <option value="US">🇺🇸 +1</option>
+                <option value="GB">🇬🇧 +44</option>
+              </select>
+              <div class="floating-label-container">
+                <input type="tel" id="phone" placeholder="" />
+                <label for="phone">Phone Number</label>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="add-buttons">
-          <button type="button" class="btn-secondary">
-            <span class="material-icons">add</span>Add Phone
-          </button>
-          <button type="button" class="btn-secondary">
-            <span class="material-icons">location_on</span>Add Address
-          </button>
-        </div>
+          <div class="add-buttons">
+            <button type="button" class="btn-secondary">
+              <span class="material-icons">add</span>Add Phone
+            </button>
+            <button type="button" class="btn-secondary">
+              <span class="material-icons">location_on</span>Add Address
+            </button>
+          </div>
 
-        <div class="form-row">
-          <div class="input-group">
-            <span class="material-icons">cake</span>
-            <select id="month" required>
-              <option value="" disabled selected hidden>Month</option>
-              <option>January</option>
-              <option>February</option>
-              <option>March</option>
-              <option>April</option>
-              <option>May</option>
-              <option>June</option>
-              <option>July</option>
-              <option>August</option>
-              <option>September</option>
-              <option>October</option>
-              <option>November</option>
-              <option>December</option>
-            </select>
-          </div>
-          <div class="input-group">
-            <div class="floating-label-container">
-              <input type="text" id="day" placeholder="" />
-              <label for="day">Day</label>
+          <div class="form-row">
+            <div class="input-group">
+              <span class="material-icons">cake</span>
+              <div class="custom-select">
+                <select id="month" required>
+                  <option value="" disabled selected hidden>Month</option>
+                  <option>January</option>
+                  <option>February</option>
+                  <option>March</option>
+                  <option>April</option>
+                  <option>May</option>
+                  <option>June</option>
+                  <option>July</option>
+                  <option>August</option>
+                  <option>September</option>
+                  <option>October</option>
+                  <option>November</option>
+                  <option>December</option>
+                </select>
+              </div>
+            </div>
+            <div class="input-group">
+              <div class="floating-label-container">
+                <input type="text" id="day" placeholder="" />
+                <label for="day">Day</label>
+              </div>
+            </div>
+            <div class="input-group">
+              <div class="floating-label-container">
+                <input type="text" id="year" placeholder="" />
+                <label for="year">Year</label>
+              </div>
             </div>
           </div>
-          <div class="input-group">
-            <div class="floating-label-container">
-              <input type="text" id="year" placeholder="" />
-              <label for="year">Year</label>
-            </div>
-          </div>
-        </div>
 
-        <div class="form-row">
-          <div class="input-group">
-            <span class="material-icons">description</span>
-            <div class="floating-label-container">
-              <textarea id="notes" placeholder=""></textarea>
-              <label for="notes">Notes</label>
+          <div class="form-row">
+            <div class="input-group">
+              <span class="material-icons">description</span>
+              <div class="floating-label-container">
+                <textarea id="notes" placeholder=""></textarea>
+                <label for="notes">Notes</label>
+              </div>
             </div>
           </div>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
   </body>
 </html>

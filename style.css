@@ -104,12 +104,6 @@ body {
   width: 100%;
 }
 
-.input-group .material-icons,
-.input-group .empty-icon {
-  width: 40px;
-  text-align: center;
-}
-
 .empty-icon::before {
   content: "";
   display: inline-block;
@@ -134,17 +128,6 @@ body {
   position: relative;
 }
 
-.floating-label-container input {
-  width: 100%;
-  padding: 14px 10px 4px;
-  font-size: 16px;
-  border: 2px solid var(--border-color);
-  border-radius: 4px;
-  outline: none;
-  background-color: transparent;
-  transition: border-color 0.2s ease-in-out;
-}
-
 .floating-label-container label {
   position: absolute;
   left: 40px;
@@ -158,6 +141,7 @@ body {
   transition: all 0.2s ease;
 }
 
+/*animacion label*/
 .floating-label-container input:focus + label,
 .floating-label-container input:not(:placeholder-shown) + label {
   top: 3px;
@@ -166,6 +150,7 @@ body {
   color: var(--primary-color);
 }
 
+/*animacion border*/
 .input-group input:focus,
 .input-group input:not(:placeholder-shown) {
   border-color: var(--primary-color);
@@ -180,7 +165,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  justify-content: center;
 }
 
 .btn-secondary {
@@ -197,7 +181,7 @@ body {
   height: auto;
   justify-content: center;
   min-width: 195px;
-  width: 100%;
+  width: 90%;
 }
 
 .btn-secondary .material-icons {
@@ -205,23 +189,11 @@ body {
   color: #0b57d0;
 }
 
-.floating-label-select {
-  position: relative;
-  flex: 0.4;
-  margin-top: 4px;
-}
-
 .phone-group {
   display: flex;
   gap: 8px;
   align-items: center;
   width: 100%;
-}
-
-.floating-label-select,
-.floating-label-container {
-  flex: 1;
-  position: relative;
 }
 
 .floating-label-select select,
@@ -234,19 +206,6 @@ body {
   border-radius: 4px;
   background-color: transparent;
   outline: none;
-}
-
-.floating-label-select select {
-  width: 100%;
-  padding: 14px 10px 4px;
-  font-size: 16px;
-  border: 2px solid var(--border-color);
-  border-radius: 4px;
-  background-color: transparent;
-  appearance: none;
-  outline: none;
-  color: var(--text-color);
-  font-family: var(--font-family);
 }
 
 .floating-label-select label {

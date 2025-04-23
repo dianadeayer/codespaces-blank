@@ -104,13 +104,17 @@
           <div class="form-row">
             <div class="input-group phone-group">
               <span class="material-icons">call</span>
-              <select class="country-code">
-                <option value="MX" selected>🇲🇽 +52</option>
-                <option value="US">🇺🇸 +1</option>
-                <option value="GB">🇬🇧 +44</option>
-              </select>
+              <div class="floating-label-select">
+                <select class="country-code" id="country-code" required>
+                  <option value="" disabled selected hidden></option>
+                  <option value="MX">🇲🇽 +52</option>
+                  <option value="US">🇺🇸 +1</option>
+                  <option value="GB">🇬🇧 +44</option>
+                </select>
+              </div>
+
               <div class="floating-label-container">
-                <input type="tel" id="phone" placeholder="" />
+                <input type="tel" id="phone" placeholder=" " required />
                 <label for="phone">Phone Number</label>
               </div>
             </div>
@@ -128,7 +132,7 @@
           <div class="form-row">
             <div class="input-group">
               <span class="material-icons">cake</span>
-              <div class="custom-select">
+              <div class="floating-label-select">
                 <select id="month" required>
                   <option value="" disabled selected hidden>Month</option>
                   <option>January</option>

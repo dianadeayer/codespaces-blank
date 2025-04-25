@@ -32,12 +32,7 @@ body {
   max-width: 500px;
 }
 
-.my-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
+/*header*/
 .form-header {
   align-items: center;
   background-color: white;
@@ -47,13 +42,6 @@ body {
   top: 0;
   position: sticky;
   z-index: 1;
-}
-
-.form-row {
-  display: flex;
-  gap: 10px;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 .back-button {
@@ -75,6 +63,19 @@ body {
   cursor: pointer;
   height: 162px;
   width: 162px;
+}
+
+.my-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .photo-add {
@@ -100,20 +101,14 @@ body {
   color: white;
 }
 
-.form-row {
-  display: flex;
-  gap: 10px;
-}
-
 .input-group {
   align-items: center;
   display: flex;
   flex: 1;
-  gap: 10px;
-  position: relative;
   width: 100%;
 }
 
+/*empty span en los input groups que no llevan icono*/
 .empty-icon::before {
   content: "";
   display: inline-block;
@@ -160,7 +155,7 @@ body {
   color: var(--primary-color);
 }
 
-/*animacion border*/
+/*animacion bordes*/
 .input-group input:focus,
 .input-group input:not(:placeholder-shown) {
   border-color: var(--primary-color);
@@ -228,9 +223,81 @@ body {
   border-radius: 4px;
 }
 
-@media (max-width: 600px) {
+/*Media queries */
+/*1200px */
+@media (max-width: 1200px) {
+  .form-container {
+    max-width: 450px;
+  }
+
+  .my-form {
+    gap: 10px;
+  }
+
   .form-row {
     flex-direction: column;
-    justify-content: flex-start; /* opcional */
+  }
+
+  .input-group {
+    gap: 8px;
+  }
+}
+
+/* 900px */
+@media (max-width: 900px) {
+  .form-container {
+    max-width: 400px;
+    padding: 15px;
+  }
+
+  .my-form {
+    gap: 8px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .input-group {
+    gap: 6px;
+  }
+
+  .btn-save {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+/* 600px */
+@media (max-width: 600px) {
+  .form-container {
+    max-width: 350px;
+    padding: 10px;
+  }
+
+  .my-form {
+    gap: 6px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .input-group {
+    gap: 4px;
+  }
+
+  .btn-save {
+    padding: 10px;
+  }
+
+  .contact-photo {
+    width: 120px;
+    height: 120px;
+  }
+
+  .btn-photo {
+    height: 40px;
+    width: 40px;
   }
 }
